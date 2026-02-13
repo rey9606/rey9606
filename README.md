@@ -32,8 +32,7 @@ Apasionado por crear aplicaciones web completas, escalables y de alto rendimient
 
 ## 📫 Contacto
 - 📧 Email: rey96061500742@gmail.com  
-- 💼 [LinkedIn](https://www.linkedin.com/in/reinerio-hernandez)  
-- 💻 [GitHub](https://github.com/rey9606)
+- 💼 [LinkedIn](https://www.linkedin.com/in/reinerio-hernandez)
 
 ---
 ⭐️ Si te interesa mi trabajo, ¡no dudes en seguirme o colaborar!
