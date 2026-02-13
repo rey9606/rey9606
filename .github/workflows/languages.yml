@@ -1,0 +1,28 @@
+name: Update Language Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # Corre cada lunes
+  workflow_dispatch:      # Permite ejecutarlo manualmente
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Language Metrics
+        uses: github-linguist/action@v1
+        with:
+          output: languages.svg
+          include_private: false
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add languages.svg
+          git commit -m "Update language metrics" || echo "No changes"
+          git push
