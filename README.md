@@ -38,7 +38,9 @@ Apasionado por crear aplicaciones web completas, escalables y de alto rendimient
 ---
 
 ## 📊 Lenguajes más usados
-![Lenguajes](./languages.svg)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rey9606&layout=compact&theme=radical)
+
 
 *(Este gráfico se actualizará automáticamente con GitHub Actions)*
 
