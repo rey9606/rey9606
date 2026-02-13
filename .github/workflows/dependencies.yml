@@ -1,12 +1,12 @@
-name: Analyze Dependencies
+name: Analyze Dependencies Across Repos
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * 1"   # Corre cada lunes
-  workflow_dispatch:
 
 permissions:
-  contents: write   # 🔑 Da permisos de escritura al GITHUB_TOKEN
+  contents: write
 
 jobs:
   analyze:
@@ -15,22 +15,58 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install jq
-        run: sudo apt-get install -y jq
+      - name: Install dependencies
+        run: npm install @octokit/rest jq
 
-      - name: Scan package.json files
+      - name: Scan all repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "📦 Dependencias más usadas:" > dependencies.txt
-          find . -name "package.json" -exec jq -r '.dependencies, .devDependencies | keys[]?' {} \; \
-          | sort | uniq -c | sort -nr >> dependencies.txt
+          node <<'EOF'
+          const { Octokit } = require("@octokit/rest");
+          const fs = require("fs");
+
+          const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+          const owner = "rey9606";
+
+          async function main() {
+            const repos = await octokit.repos.listForUser({ username: owner, per_page: 100 });
+            const counts = {};
+
+            for (const repo of repos.data) {
+              try {
+                const pkg = await octokit.repos.getContent({
+                  owner,
+                  repo: repo.name,
+                  path: "package.json"
+                });
+                const content = Buffer.from(pkg.data.content, "base64").toString();
+                const json = JSON.parse(content);
+                const deps = { ...json.dependencies, ...json.devDependencies };
+                for (const dep of Object.keys(deps || {})) {
+                  counts[dep] = (counts[dep] || 0) + 1;
+                }
+              } catch (e) {
+                // Ignorar repos sin package.json
+              }
+            }
+
+            const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+            let output = "📦 Dependencias más usadas:\n\n";
+            for (const [dep, count] of sorted) {
+              output += `${count} ${dep}\n`;
+            }
+            fs.writeFileSync("dependencies.txt", output);
+          }
+
+          main();
+          EOF
 
       - name: Commit results
         run: |
