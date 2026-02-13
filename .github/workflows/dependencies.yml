@@ -5,6 +5,9 @@ on:
     - cron: "0 0 * * 1"   # Corre cada lunes
   workflow_dispatch:
 
+permissions:
+  contents: write   # 🔑 Da permisos de escritura al GITHUB_TOKEN
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
@@ -25,7 +28,7 @@ jobs:
 
       - name: Scan package.json files
         run: |
-          echo "Dependencias más usadas:" > dependencies.txt
+          echo "📦 Dependencias más usadas:" > dependencies.txt
           find . -name "package.json" -exec jq -r '.dependencies, .devDependencies | keys[]?' {} \; \
           | sort | uniq -c | sort -nr >> dependencies.txt
 
@@ -35,4 +38,4 @@ jobs:
           git config user.email "github-actions@github.com"
           git add dependencies.txt
           git commit -m "Update dependency metrics" || echo "No changes"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
