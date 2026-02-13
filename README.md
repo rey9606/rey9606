@@ -35,14 +35,7 @@ Apasionado por crear aplicaciones web completas, escalables y de alto rendimient
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
----
 
-## 📊 Lenguajes más usados
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rey9606&layout=compact&theme=radical)
-
-
-*(Este gráfico se actualizará automáticamente con GitHub Actions)*
 
 ---
 
