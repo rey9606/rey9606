@@ -1,0 +1,396 @@
+{
+  "profile": {
+    "name": "Reinerio Hernández Bravo",
+    "title": "Ingeniero Industrial & Developer",
+    "description": "Especialista en Producto y Optimización. Transformo ideas complejas en soluciones digitales intuitivas y eficientes.",
+    "image": "profile/perfil.webp",
+    "heroImage": "profile/img1.webp",
+    "socialLinks": [
+      { "platform": "LinkedIn", "url": "https://linkedin.com/in/reinerio-hernández-bravo", "icon": "linkedin" },
+      { "platform": "GitHub", "url": "https://github.com/rey9606", "icon": "github" },
+      { "platform": "Email", "url": "mailto:rey96061500742@gmail.com", "icon": "mail" }
+    ],
+    "status": "available",
+    "whatsappNumber": "5358377778",
+    "email": "rey96061500742@gmail.com"
+  },
+  "experience": [
+    {
+      "id": "tecpos",
+      "company": "TECOPOS",
+      "companyKey": "exp.tecpos.company",
+      "location": "Remoto",
+      "type": "full-time",
+      "color": "blue",
+      "icon": "building",
+      "technologies": ["TypeScript", "NestJS", "PostgreSQL", "Sequelize", "Redis", "Microservicios"],
+      "roles": [
+        {
+          "id": "tecpos-qa",
+          "title": "Líder de QA (Automatización)",
+          "titleKey": "exp.tecpos.roles.qa.title",
+          "period": "Dic 2025 - Feb 2026",
+          "periodKey": "exp.tecpos.roles.qa.period",
+          "highlight": "Implementación de testing E2E desde cero",
+          "highlightKey": "exp.tecpos.roles.qa.highlight",
+          "achievements": ["exp.tecpos.roles.qa.achievement1"],
+          "technologies": ["Playwright", "TypeScript", "E2E Testing"],
+          "icon": "testTube"
+        },
+        {
+          "id": "tecpos-backend-lead",
+          "title": "Líder de Backend",
+          "titleKey": "exp.tecpos.roles.backendLead.title",
+          "period": "Nov 2025 - Feb 2026",
+          "periodKey": "exp.tecpos.roles.backendLead.period",
+          "highlight": "Eliminación de caídas de servidor recurrentes",
+          "highlightKey": "exp.tecpos.roles.backendLead.highlight",
+          "achievements": [
+            "exp.tecpos.roles.backendLead.achievement1",
+            "exp.tecpos.roles.backendLead.achievement2",
+            "exp.tecpos.roles.backendLead.achievement3",
+            "exp.tecpos.roles.backendLead.achievement4"
+          ],
+          "technologies": ["TypeScript", "NestJS", "PostgreSQL", "Sequelize", "Redis", "Microservicios"],
+          "icon": "server"
+        },
+        {
+          "id": "tecpos-backend-dev",
+          "title": "Desarrollador Backend",
+          "titleKey": "exp.tecpos.roles.backendDev.title",
+          "period": "Ago 2025 - Oct 2025",
+          "periodKey": "exp.tecpos.roles.backendDev.period",
+          "highlight": "Profundización en arquitectura backend empresarial",
+          "highlightKey": "exp.tecpos.roles.backendDev.highlight",
+          "achievements": ["exp.tecpos.roles.backendDev.achievement1", "exp.tecpos.roles.backendDev.achievement2"],
+          "technologies": ["TypeScript", "Node.js", "PostgreSQL", "Sequelize"],
+          "icon": "code"
+        }
+      ]
+    },
+    {
+      "id": "linki",
+      "company": "Linki",
+      "companyKey": "exp.linki.company",
+      "role": "Cofundador & Líder de Producto",
+      "roleKey": "exp.linki.role",
+      "period": "2023 - 2025",
+      "periodKey": "exp.linki.period",
+      "description": "Marketplace descentralizado de transporte",
+      "descriptionKey": "exp.linki.desc",
+      "technologies": ["Angular 17+", "TypeScript", "NestJS", "MongoDB", "IndexedDB", "PWA", "Figma"],
+      "type": "entrepreneurship",
+      "color": "cyan",
+      "icon": "car"
+    },
+    {
+      "id": "freelance",
+      "company": "Freelance",
+      "companyKey": "exp.freelance.company",
+      "role": "Desarrollador Full-Stack",
+      "roleKey": "exp.freelance.role",
+      "period": "2024 - Presente",
+      "periodKey": "exp.freelance.period",
+      "description": "Proyectos independientes para clientes internacionales",
+      "descriptionKey": "exp.freelance.desc",
+      "technologies": ["TypeScript", "Angular 21", "IndexedDB", "PWA", "Testing"],
+      "type": "freelance",
+      "color": "purple",
+      "icon": "briefcase"
+    }
+  ],
+  "projects": [
+    {
+      "nombre": "Linki - Marketplace de Viajes Descentralizado",
+      "cliente": "Emprendimiento propio - Cofundador",
+      "periodo": "2023-2025",
+      "duracion_estimada": "3 años",
+      "descripcion": "Marketplace descentralizado de transporte en taxi que conecta viajeros con conductores de confianza. Plataforma completa con PWA, geolocalización avanzada, sistema de viajes en tiempo real y programados, integración nativa con WhatsApp, y soporte con detección semántica.",
+      "rol": "Cofundador, Líder de Producto, Frontend Lead, UX/UI Lead",
+      "equipo": "Reinerio (Producto, UX/UI, Frontend Lead) + Jean Carlos (Backend Lead, DevOps)",
+      "objetivos": [
+        "Crear marketplace funcional de viajes taxi B2C",
+        "Implementar sistema de viajes en tiempo real y programados",
+        "Desarrollar experiencia PWA nativa multiplataforma",
+        "Integrar sistemas de comunicación (WhatsApp, WebSockets)",
+        "Implementar sistema de soporte con IA semántica",
+        "Validar producto con usuarios reales"
+      ],
+      "logros": [
+        {
+          "titulo": "387 usuarios registrados validando el producto",
+          "descripcion": "127 conductores y 260 viajeros utilizando la plataforma",
+          "metrica": "Product-market fit validado en contexto cubano",
+          "accion": "Iteración continua basada en feedback de usuarios, pivot de modelo de negocio"
+        },
+        {
+          "titulo": "Arquitectura backend escalable con NestJS",
+          "descripcion": "Sistema robusto con colas BullMQ, tareas programadas y procesamiento asíncrono",
+          "metrica": "Capacidad de procesar múltiples viajes simultáneos",
+          "accion": "Implementación de arquitectura de microservicios, Redis para colas, PostgreSQL con PostGIS"
+        },
+        {
+          "titulo": "Integración nativa con WhatsApp",
+          "descripcion": "Login, notificaciones y gestión de comunidades mediante Baileys y whatsapp-webjs",
+          "metrica": "Comunicación bidireccional automatizada",
+          "accion": "Múltiples proveedores WhatsApp para redundancia, gestión de grupos y comunidades"
+        },
+        {
+          "titulo": "Sistema de soporte con detección semántica",
+          "descripcion": "Detección de similitud semántica usando embeddings y pgvector",
+          "metrica": "Matching inteligente de tickets de soporte",
+          "accion": "Integración de modelos de embeddings, vectorización con pgvector en PostgreSQL"
+        },
+        {
+          "titulo": "Geolocalización y mapas avanzados",
+          "descripcion": "OpenLayers con APIs de mapa, ruteo y geolocalización",
+          "metrica": "Visualización en tiempo real de viajes y conductores cercanos",
+          "accion": "PostGIS para queries geoespaciales, OpenLayers para renderizado de mapas, cálculo de rutas"
+        },
+        {
+          "titulo": "Viajes en tiempo real con WebSockets",
+          "descripcion": "Sistema de viaje, mensajería y tracking en tiempo real",
+          "metrica": "Latencia <100ms en actualizaciones de ubicación",
+          "accion": "WebSockets para comunicación bidireccional, optimización de conexiones persistentes"
+        },
+        {
+          "titulo": "Sistema de recomendaciones y ratings",
+          "descripcion": "Perfiles con estrellas, comentarios y personalización",
+          "metrica": "Sistema de reputación implementado",
+          "accion": "Algoritmo de ratings, sistema de comentarios, personalización de perfiles de usuario"
+        },
+        {
+          "titulo": "PWA con experiencia nativa",
+          "descripcion": "Progressive Web App instalable con funcionalidad offline",
+          "metrica": "Experiencia comparable a apps nativas en iOS/Android",
+          "accion": "Service Workers, caché inteligente, push notifications, install prompts"
+        },
+        {
+          "titulo": "Integración OAuth con Google",
+          "descripcion": "Login social y almacenamiento en Google Cloud",
+          "metrica": "Onboarding simplificado para usuarios",
+          "accion": "Google OAuth 2.0, integración con Google Drive/Storage"
+        },
+        {
+          "titulo": "Sistema KYC con reconocimiento facial",
+          "descripcion": "Verificación de identidad usando FaceNet",
+          "metrica": "Implementado y listo para despliegue",
+          "accion": "Python + FaceNet para reconocimiento facial, pipeline de verificación"
+        }
+      ],
+      "tecnologias": [
+        "Angular 19", "TypeScript", "NestJS", "Node.js", "PostgreSQL", "PostGIS", "pgvector",
+        "Redis", "BullMQ", "WebSockets", "PWA", "OpenLayers", "Baileys", "whatsapp-webjs",
+        "Google OAuth", "Google Cloud Storage", "FaceNet", "Python", "Docker", "GitHub Actions"
+      ],
+      "habilidades_aplicadas": [
+        "Arquitectura de software", "UI/UX avanzado", "Diseño de producto", "Liderazgo técnico",
+        "Geolocalización", "Integraciones WhatsApp", "Base de datos geoespaciales",
+        "Colas de procesamiento", "WebSockets", "Machine Learning (embeddings)", "PWA", "Metodologías ágiles"
+      ],
+      "estado": "Pausado - 80% completado, en desarrollo como side project",
+      "metricas_negocio": { "usuarios_totales": 387, "conductores": 127, "viajeros": 260, "usuarios_activos_pico": "~150 mensuales" },
+      "proximas_funcionalidades": ["KYC obligatorio para conductores", "KYC para viajeros en horario nocturno", "Sistema de afiliados", "Integración con pagos via crypto"],
+      "nota": "Proyecto más ambicioso - marketplace completo con arquitectura empresarial. Demuestra capacidad de liderar producto complejo desde cero, tomar decisiones de pivot y trabajar con tecnologías avanzadas.",
+      "link_demo": null,
+      "repositorio": null,
+      "assets": "linki"
+    },
+    {
+      "nombre": "Sistema POS - Punto de Venta",
+      "cliente": "Proyecto lateral personal",
+      "periodo": "2025",
+      "duracion_estimada": "3-4 días",
+      "descripcion": "Sistema POS completo desarrollado en tiempo récord con Angular 21, enfocado en usabilidad extrema y productividad del usuario final.",
+      "rol": "Full-Stack Developer (énfasis Frontend/UI)",
+      "objetivos": ["Crear sistema POS funcional en tiempo récord", "Aplicar mejores prácticas de Angular 21", "Demostrar velocidad sin sacrificar calidad", "Optimizar flujo de trabajo para productividad máxima"],
+      "logros": [
+        { "titulo": "Desarrollo completo en 3-4 días", "descripcion": "Sistema POS funcional desde cero con Angular 21", "metrica": "Sistema operativo en menos de una semana", "accion": "Arquitectura moderna, componentes reutilizables, integración con agentes de IA" },
+        { "titulo": "Optimización de usabilidad y flujo de trabajo", "descripcion": "Interfaz diseñada para máxima productividad del cajero", "metrica": "Mínima cantidad de clicks para operaciones comunes", "accion": "Análisis de procesos de venta, eliminación de fricción" },
+        { "titulo": "Responsive design avanzado", "descripcion": "Funcionamiento perfecto en tablets, móviles y desktop", "metrica": "Experiencia consistente en todos los dispositivos", "accion": "Mobile-first approach, breakpoints optimizados" },
+        { "titulo": "Alta calidad visual con atención escrupulosa al detalle", "descripcion": "Píxeles perfectos, alineaciones precisas", "metrica": "UI profesional comparable a productos enterprise", "accion": "Refinamiento visual constante, sistema de diseño consistente" },
+        { "titulo": "Uso avanzado de agentes de IA", "descripcion": "Integración de IA en flujo de trabajo para acelerar desarrollo", "metrica": "Productividad multiplicada manteniendo control total", "accion": "GitHub Copilot, ChatGPT/Claude para generación de código" }
+      ],
+      "tecnologias": ["Angular 21", "TypeScript", "PWA", "RxJS", "Standalone Components", "Agentes de IA"],
+      "habilidades_aplicadas": ["Desarrollo rápido", "UI/UX avanzado", "Arquitectura Angular moderna", "Responsive design", "Optimización de flujos"],
+      "estado": "Funcional, en desarrollo continuo",
+      "nota": "Demuestra velocidad excepcional de desarrollo, dominio de Angular moderno y enfoque en productividad del usuario.",
+      "link_demo": null,
+      "repositorio": null,
+      "assets": "pos"
+    },
+    {
+      "nombre": "Wallet de Criptomonedas (PWA)",
+      "cliente": "Inversionista privado (internacional)",
+      "periodo": "2024",
+      "duracion_estimada": "2-3 meses",
+      "descripcion": "Wallet funcional como PWA 100% frontend con gestión de múltiples wallets, seguimiento de tokens en tiempo real y persistencia local de datos",
+      "rol": "Líder de Frontend, UI/UX Lead",
+      "equipo": "Reinerio (UI/UX, Frontend) + Jean Carlos (Backend, DevOps)",
+      "objetivos_cliente": ["Crear wallet funcional con arquitectura offline-first", "Experiencia de usuario comparable a apps nativas", "Funcionalidad multiplataforma", "Persistencia local con IndexedDB"],
+      "logros": [
+        { "titulo": "Arquitectura offline-first con IndexedDB", "descripcion": "Implementación de almacenamiento local para wallets", "metrica": "Operación sin conexión con sincronización automática", "accion": "Almacenamiento local con idb, operaciones CRUD asíncronas" },
+        { "titulo": "Sistema de emojis custom", "descripcion": "Desarrollo de sistema de emojis para identificación visual de wallets", "metrica": "Identificación visual mediante avatares emoji persistentes", "accion": "Traducciones dinámicas, cálculo responsivo del tamaño" },
+        { "titulo": "Integración de APIs blockchain", "descripcion": "Consumo de CoinGecko + API propia para precios en tiempo real", "metrica": "Visualización clara de información financiera compleja", "accion": "Interceptores para rate limiting y caché" },
+        { "titulo": "PWA nativa con Angular Service Worker", "descripcion": "Configuración completa de PWA para instalación", "metrica": "Experiencia nativa equiparable a apps nativas", "accion": "Manifiesto, estrategias de caché e instalación en iOS/Android" },
+        { "titulo": "UI mobile-first tipo app nativa", "descripcion": "Diseño de navegación fluida con gestos táctiles", "metrica": "Navegación fluida con pull-to-refresh", "accion": "Pull-to-refresh, gestos táctiles y safe areas optimizadas" }
+      ],
+      "tecnologias": ["Angular 20", "TypeScript", "PWA", "IndexedDB", "CoinGecko API", "ngx-emoji-mart", "idb"],
+      "habilidades_aplicadas": ["UI/UX avanzado", "PWA", "Diseño responsive", "Animaciones", "Arquitectura offline-first", "APIs blockchain"],
+      "estado": "Completado por iteraciones, descontinuado por cliente",
+      "satisfaccion_cliente": "Muy satisfecho con calidad de UI/UX",
+      "assets": "wallet"
+    },
+    {
+      "nombre": "Upgrade ngrx-material-starter",
+      "cliente": "Proyecto freelance por encargo",
+      "periodo": "2024",
+      "duracion_estimada": "3 semanas",
+      "descripcion": "Proyecto freelance para modernizar y estabilizar una base ngrx-material-starter, migrando de Angular 14 a 19 y agregando testing robusto.",
+      "rol": "Desarrollador Frontend (freelance)",
+      "objetivos_cliente": ["Actualizar completamente de Angular 14 a 19", "Implementar tests unitarios y de integración", "Arreglar bugs críticos heredados", "Dejar la base lista para desarrollos futuros"],
+      "logros": [
+        { "titulo": "Migración y actualización total Angular 14→19", "descripcion": "Upgrade de dependencias y modernización de código", "metrica": "Sistema funcionando correctamente en Angular 19", "accion": "Upgrade de Angular, migración de APIs y refactor" },
+        { "titulo": "Cobertura inicial de testing unitario", "descripcion": "Implementación de tests con Jasmine y Karma", "metrica": "Suite de tests establecida para módulos principales", "accion": "Creación de tests unitarios, configuración de ambiente" },
+        { "titulo": "Debug y fixes críticos", "descripcion": "Corrección de errores reportados", "metrica": "Todas las incidencias críticas resueltas", "accion": "Debug exhaustivo, revisión de issue tracker, fixes" }
+      ],
+      "tecnologias": ["Angular 14→19", "TypeScript", "ngrx", "Angular Material", "Jasmine", "Karma", "Git"],
+      "habilidades_aplicadas": ["Actualización de frameworks", "Testing unitario", "Debugging", "Refactorización", "Migración de proyectos"],
+      "estado": "Completado",
+      "resultado": "Proyecto modernizado, documentación básica y base lista para evoluciones",
+      "assets": "ngrx-material-starter"
+    },
+    {
+      "nombre": "Silver Beauty & Spa",
+      "cliente": "Intermediario (freelancer internacional en Argentina)",
+      "periodo": "2024",
+      "duracion_estimada": "8 semanas",
+      "descripcion": "Rediseño y optimización completa de sistema de gestión de spa, mejoras de UI, lógica y facturación",
+      "rol": "Full-Stack Developer (énfasis Frontend)",
+      "equipo": "Trabajo individual con consultoría de Jean Carlos",
+      "objetivos_cliente": ["Modernizar interfaz del sistema", "Mejorar lógica de negocio", "Optimizar módulo de facturación", "Agregar sistema de mensajería"],
+      "logros": [
+        { "titulo": "Rediseño completo de UI", "descripcion": "Modernización de interfaz siguiendo mejores prácticas", "metrica": "Interfaz profesional y moderna", "accion": "Análisis de UX, rediseño completo, implementación" },
+        { "titulo": "Optimización de lógica del sistema", "descripcion": "Refactorización de código legacy", "metrica": "Código más mantenible, mejoras de performance", "accion": "Múltiples refactorizaciones, optimizaciones" },
+        { "titulo": "Mejora de módulo de facturación", "descripcion": "Rediseño de proceso de facturación", "metrica": "Proceso más eficiente y robusto", "accion": "Análisis de requerimientos, rediseño de lógica" },
+        { "titulo": "Integración de sistema de mensajería", "descripcion": "Sistema de comunicación automatizada con clientes", "metrica": "Comunicación automatizada implementada", "accion": "Integración de API de mensajería" }
+      ],
+      "tecnologias": ["Angular", "Node.js", "UI/UX Design", "Mensajería"],
+      "habilidades_aplicadas": ["UI/UX", "Refactorización", "Optimización", "Integraciones"],
+      "estado": "Completado",
+      "satisfaccion_cliente": "Muy satisfecho, sistema operativo mejorado",
+      "assets": "silver"
+    },
+    {
+      "nombre": "Bot WhatsApp Automatizado",
+      "cliente": "Agencia de publicidad",
+      "periodo": "2024",
+      "duracion_estimada": "3 semanas",
+      "descripcion": "Sistema de automatización en WhatsApp para recopilación y actualización de base de datos de clientes",
+      "rol": "Full-Stack Developer",
+      "equipo": "Reinerio (Producto, Frontend) + Jean Carlos (Backend principal, DevOps)",
+      "objetivos_cliente": ["Automatizar recopilación de datos de clientes", "Actualizar base de datos existente", "Flujo de conversación automatizado"],
+      "logros": [
+        { "titulo": "Flujo de conversación automatizado", "descripcion": "Bot que realiza preguntas de reactivación y actualización", "metrica": "Recopilación automática de datos funcionando", "accion": "Diseño de flujo conversacional, implementación de lógica" },
+        { "titulo": "Integración con base de datos", "descripcion": "Sincronización en tiempo real", "metrica": "Datos actualizados automáticamente en BD", "accion": "API REST, sincronización, validación de datos" }
+      ],
+      "tecnologias": ["NestJS", "Angular", "WhatsApp API/Baileys", "MongoDB"],
+      "habilidades_aplicadas": ["Automatización", "Chatbots", "Integraciones", "Diseño conversacional"],
+      "estado": "Completado",
+      "resultado": "Sistema operativo para campaña de reactivación",
+      "assets": "bot-whatsapp"
+    },
+    {
+      "nombre": "Web Scraping y Automatización",
+      "cliente": "Agencias de publicidad (múltiples)",
+      "periodo": "2024",
+      "duracion_estimada": "Proyectos puntuales",
+      "descripcion": "Extracción de datos web y automatización de procesos para análisis de mercado",
+      "rol": "Desarrollador Backend/Automation",
+      "objetivos_cliente": ["Extraer datos de competencia", "Análisis de mercado", "Automatización de reportes"],
+      "logros": [
+        { "titulo": "Scrapers robustos multi-fuente", "descripcion": "Extracción de datos de múltiples sitios web", "metrica": "Datos extraídos para análisis", "accion": "Playwright, manejo de anti-detección, parsing de datos" }
+      ],
+      "tecnologias": ["Playwright", "Python", "Puppeteer", "Node.js"],
+      "habilidades_aplicadas": ["Web scraping", "Automatización", "Análisis de datos"],
+      "estado": "Completado",
+      "nota": "Múltiples proyectos similares para diferentes agencias",
+      "assets": "web-scraping"
+    },
+    {
+      "nombre": "Estrategia de Trading PineScript",
+      "cliente": "Inversionista privado (trading)",
+      "periodo": "2024",
+      "duracion_estimada": "2-3 semanas",
+      "descripcion": "Materialización de estrategia de trading algorítmico en PineScript para TradingView",
+      "rol": "Desarrollador PineScript / Asesor técnico",
+      "objetivos_cliente": ["Traducir estrategia de trading a código PineScript", "Validar reglas de entrada/salida", "Preparar para posible automatización"],
+      "logros": [
+        { "titulo": "Estrategia funcional en PineScript", "descripcion": "Modelado de reglas complejas de trading", "metrica": "Cliente muy satisfecho con resultado", "accion": "Análisis de estrategia, modelado de reglas, codificación" }
+      ],
+      "tecnologias": ["PineScript", "TradingView", "Trading algorítmico"],
+      "habilidades_aplicadas": ["PineScript", "Lógica de trading", "Modelado de reglas"],
+      "estado": "Completado",
+      "satisfaccion_cliente": "Muy satisfecho",
+      "nota": "Proyecto único, demuestra versatilidad técnica",
+      "assets": "pinescript"
+    }
+  ],
+  "skills": {
+    "tree": {
+      "nodes": [
+        { "id": 1, "name": "html", "icon": "si:html5", "score": 5, "x": 3, "y": 0, "projects": ["General"], "comment": "Estructura semántica avanzada." },
+        { "id": 3, "name": "js", "icon": "si:javascript", "score": 5, "x": 4, "y": 1, "projects": ["General"], "comment": "Lógica pura y manipulación de APIs del navegador." },
+        { "id": 2, "name": "css", "icon": "si:css3", "score": 5, "x": 1, "y": 1, "projects": ["General"], "comment": "Layouts complejos y animaciones." },
+        { "id": 8, "name": "git", "icon": "si:git", "score": 4, "x": 0, "y": 2, "projects": ["Workflow diario"], "comment": "Gestión de versiones y GitFlow." },
+        { "id": 9, "name": "github", "icon": "si:github", "score": 4, "x": 0, "y": 3, "projects": ["Open Source", "CI/CD"], "comment": "Colaboración y despliegue automático." },
+        { "id": 10, "name": "postgresql", "icon": "si:postgresql", "score": 4, "x": 5, "y": 3, "projects": ["TECOPOS"], "comment": "Modelado de datos y optimización de rendimiento." },
+        { "id": 5, "name": "ts", "icon": "si:typescript", "score": 5, "x": 2, "y": 2, "projects": ["Angular Projects", "NestJS"], "comment": "Tipado avanzado y genéricos." },
+        { "id": 6, "name": "node", "icon": "si:nodedotjs", "score": 4, "x": 4, "y": 2, "projects": ["TECOPOS", "Linki"], "comment": "Runtime para servicios de alta concurrencia." },
+        { "id": 7, "name": "express", "icon": "si:express", "score": 4, "x": 3, "y": 3, "projects": ["Microservicios"], "comment": "Servidores REST rápidos." },
+        { "id": 12, "name": "nestjs", "icon": "si:nestjs", "score": 4, "x": 3, "y": 4, "projects": ["TECOPOS Backend"], "comment": "Arquitectura modular y escalable." },
+        { "id": 11, "name": "angular", "icon": "si:angular", "score": 5, "x": 1, "y": 4, "projects": ["TECOPOS POS", "Cripto Wallet"], "comment": "Especialista en Signals, RxJS y Standalone Components." },
+        { "id": 17, "name": "pwa", "icon": "si:pwa", "score": 4, "x": 0, "y": 5, "projects": ["Cripto Wallet"], "comment": "Experiencia móvil sin instalación y modo offline." },
+        { "id": 13, "name": "playwright", "icon": "si:playwright", "score": 4, "x": 4, "y": 4, "projects": ["TECOPOS QA"], "comment": "Automatización de pruebas E2E y calidad de software." },
+        { "id": 18, "name": "websockets", "icon": "si:socketdotio", "score": 4, "x": 2, "y": 4, "projects": ["Real-time POS"], "comment": "Comunicación constante servidor-cliente." },
+        { "id": 16, "name": "docker", "icon": "si:docker", "score": 3, "x": 0, "y": 4, "projects": ["Infraestructura"], "comment": "Contenedores para despliegue consistente." },
+        { "id": 14, "name": "scss", "icon": "si:sass", "score": 5, "x": 1, "y": 5, "projects": ["Design Systems"], "comment": "Preprocesadores aprendidos tras dominar Angular." },
+        { "id": 15, "name": "tailwind", "icon": "si:tailwindcss", "score": 5, "x": 1, "y": 6, "projects": ["Proyectos Rápidos"], "comment": "Productividad máxima en diseño UI." },
+        { "id": 25, "name": "sequelize", "icon": "si:sequelize", "score": 4, "x": 5, "y": 6, "projects": ["TECOPOS"], "comment": "Abstracción eficiente de bases de datos." },
+        { "id": 21, "name": "event emitter", "icon": "si:javascript", "score": 4, "x": 4, "y": 6, "projects": ["Lógica Interna"], "comment": "Arquitecturas reactivas basadas en eventos." },
+        { "id": 20, "name": "microservicios", "icon": "si:v0", "score": 4, "x": 3, "y": 5, "projects": ["TECOPOS"], "comment": "Desacoplamiento de lógica de negocio." },
+        { "id": 22, "name": "kafka", "icon": "si:apachekafka", "score": 3, "x": 3, "y": 6, "projects": ["Data Streaming"], "comment": "Gestión de flujos de datos distribuidos." },
+        { "id": 24, "name": "redis", "icon": "si:redis", "score": 4, "x": 2, "y": 5, "projects": ["Caching", "BullMQ"], "comment": "Motor de alto rendimiento en memoria." },
+        { "id": 19, "name": "bullmq", "icon": "si:redis", "score": 4, "x": 2, "y": 6, "projects": ["TECOPOS Tasks"], "comment": "Manejo profesional de colas asíncronas." },
+        { "id": 23, "name": "signals", "icon": "si:angular", "score": 5, "x": 0, "y": 6, "projects": ["Angular 21 Upgrade"], "comment": "Estado reactivo de última generación." }
+      ],
+      "edges": [
+        { "from": 1, "to": 3 }, { "from": 1, "to": 2 },
+        { "from": 3, "to": 5 }, { "from": 3, "to": 6 },
+        { "from": 2, "to": 11 },
+        { "from": 8, "to": 9 },
+        { "from": 5, "to": 11 }, { "from": 5, "to": 12 },
+        { "from": 6, "to": 7 }, { "from": 6, "to": 13 },
+        { "from": 7, "to": 12 }, { "from": 7, "to": 18 },
+        { "from": 10, "to": 25 },
+        { "from": 11, "to": 14 }, { "from": 11, "to": 17 }, { "from": 11, "to": 23 },
+        { "from": 14, "to": 15 },
+        { "from": 12, "to": 24 }, { "from": 12, "to": 20 }, { "from": 12, "to": 21 }, { "from": 12, "to": 25 },
+        { "from": 24, "to": 19 },
+        { "from": 20, "to": 22 }
+      ]
+    }
+  },
+  "config": {
+    "github": {
+      "dataRepo": "user/portfolio-data",
+      "branch": "main",
+      "assetsPath": "assets"
+    },
+    "features": {
+      "enableI18n": true,
+      "enableThemeToggle": true,
+      "enableLanguageToggle": true
+    }
+  }
+}
